@@ -20,7 +20,7 @@ function validalas(){
     var uzenet = "";
     var megadottAdatok="";
     var reg=/[A-Z]+[a-z]{2,}/;
-    var reg2 =/[0-9]{10,}/;
+    var reg2 =/[0-9]+ @ {10,}/;
         if(ID("nev").value.length < 3){
             uzenet+="A név legalább 3 karakter hosszú legyen!<br>";
             ID("nev").style.border="2px solid red";
@@ -38,7 +38,9 @@ function validalas(){
             ID("emailujra").style.border="none";
             
         }
-        if(!reg.test(ID("tel").value)){
+        if(!reg2.test(ID("tel").value)){
+            uzenet+="Csak számokat írjon!<br>";
+            ID("tel").style.border="2px solid red";
             
         }
         

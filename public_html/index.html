@@ -19,9 +19,12 @@ and open the template in the editor.
                 <h1>Üdvözöljük a weblapunkon!</h1>
             </header>
             <nav>
-                <a href="index.html">Űrlap</a>
-                <a href="#">Menü 1</a> 
-                <a href="#">Menü 2</a>
+                <ul>
+                    <li><a href="index.html">Űrlap</a></li>
+                    <li><a href="#">Menü 1</a></li>
+                    <li><a href="#">Menü 2</a></li>
+                </ul>
+
 
             </nav>
             <article>
@@ -30,40 +33,40 @@ and open the template in the editor.
                     <fieldset>
                         <div class="urlapelem"   >
                             <label for="nev">Név</label>       
-                            <input type="text" name="nev" id="nev" placeholder="Adja meg a nevét!" title="A név nagybetűvel kezdődik és legalább 3 karakter!" >
+                            <input type="text" name="nev" id="nev" placeholder="Adja meg a nevét!" title="A név nagybetűvel kezdődik és legalább 3 karakter!" ><br><br>
                         </div> 
                         <div class="urlapelem"   >
                             <label for="email">Email</label>       
-                            <input type="text" name="email" id="email" placeholder="Adja meg az emailcímét!" title="Egyezzen a két emailcím" >
+                            <input type="text" name="email" id="email" placeholder="Adja meg az emailcímét!" title="Egyezzen a két emailcím" ><br><br>
                         </div> 
                         <div class="urlapelem"   >
                             <label for="email">Email újra</label>       
-                            <input type="text" name="email" id="emailujra" placeholder="Adja meg az emailcímét!" title="Egyezzen a két emailcím" >
+                            <input type="text" name="email" id="emailujra" placeholder="Adja meg az emailcímét!" title="Egyezzen a két emailcím" ><br><br>
                         </div>  
                         <div>
-                            <label for="tel">Telefon:</label><br><br>
-                            <input type="tel" class="form-control" id="tel" pattern="[0-9]{10,}" maxlength="11" required="">
+                            <label for="tel">Telefon:</label>
+                            <input type="tel" class="form-control" id="tel" pattern="[0-9]{10,}" maxlength="11" required=""><br><br>
                         </div>
 
                     </fieldset>
                     <fieldset>
                         <div>
                         <label for="fname">Weblap:</label>
-                        <input type="text" id="fname" name="fname">
+                        <input type="text" id="fname" name="fname"><br><br>
                         
                         </div>
                         <div>
-                            <label for="male">Prioritás</label><br>
+                            <label for="male">Prioritás</label>
                             <select>
                                 <option value="valaki">Alacsony</option>
                                 <option value="valaki">Közepes</option>
                                 <option value="valaki">Magas</option>
                                 
-                            </select>  
+                            </select>  <br><br>
                         </div>
                         <div>
                         <label for="fname">Üzenet:</label>
-                        <input type="text" id="fname" name="fname">
+                        <input type="text" id="fname" name="fname"><br><br>
                         
                     </div>
                     </fieldset>
