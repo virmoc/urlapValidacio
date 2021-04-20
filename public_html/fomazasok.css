@@ -1,0 +1,31 @@
+@charset "utf-8";
+header{
+    background-color: lightsalmon;
+}
+nav{
+    background-color:lightgreen;
+    
+}
+nav li {
+    list-style-type: none;
+    padding-right: 30px;  
+}
+nav a{
+    text-decoration: none;
+}
+article{
+    background-color:lightcyan
+}
+aside{
+    background-color:skyblue;
+}
+footer{
+    background-color:lightcoral;
+}
+#hatter{
+    background-color:green;
+}
+aside section:nth-child(2) p{
+    color:indianred;
+}
+
