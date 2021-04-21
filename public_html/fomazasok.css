@@ -28,4 +28,7 @@ footer{
 aside section:nth-child(2) p{
     color:indianred;
 }
+fieldset{
+    margin-bottom: 10px;
+}
 

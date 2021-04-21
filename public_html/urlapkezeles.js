@@ -11,6 +11,7 @@ function $(nev){
 function init(){
 //    console.log("hahó");
     ID("kuld").addEventListener("click", validalas);
+    ID("torol").addEventListener("click", torles);
 }
 function validalas(){
 //    console.log("Hahó");
@@ -51,5 +52,7 @@ function validalas(){
     $("aside setion:nth-child(2) p")[0].innerHTML=megadottAdatok;
     
 }
-
+function torles(){
+    
+}
 

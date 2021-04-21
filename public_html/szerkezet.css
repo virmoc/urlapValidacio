@@ -33,4 +33,16 @@ footer{
 aside{
     grid-area:as;
 }
+@media screen and (max-width:800px){
+    main{   
+    grid-template-areas:
+        "h "
+        "n "
+        "a "
+        "as "
+        "f "
+        ;
+    width: 100%;
+    }
+}
 
