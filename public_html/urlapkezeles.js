@@ -21,7 +21,8 @@ function validalas(){
     var uzenet = "";
     var megadottAdatok="";
     var reg=/[A-Z]+[a-z]{2,}/;
-    var reg2 =/[0-9]+ @ {10,}/;
+    var regtel =/[0-9]{10,}/;
+    var regemail =/[0-9a-z\.-]+@([0-9a-z-]+\.)+[a-z]{2,4}/;
         if(ID("nev").value.length < 3){
             uzenet+="A név legalább 3 karakter hosszú legyen!<br>";
             ID("nev").style.border="2px solid red";
@@ -39,9 +40,20 @@ function validalas(){
             ID("emailujra").style.border="none";
             
         }
-        if(!reg2.test(ID("tel").value)){
+        if(!regtel.test(ID("tel").value)){
             uzenet+="Csak számokat írjon!<br>";
             ID("tel").style.border="2px solid red";
+            
+        }else{
+            ID("tel").style.border="none";
+            
+        }
+        if(!regemail.test(ID("email").value)){
+            uzenet+="Az email címnek tartalmaznia kell a @ jelet!<br>";
+            ID("email").style.border="2px solid red";
+            
+        }else{
+            ID("email").style.border="none";
             
         }
         
